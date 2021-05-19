@@ -1,0 +1,78 @@
+<html lang="en">
+	<head>
+		<title>TwelveSky</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>		
+		body { margin: 0px; }
+		</style>
+	</head>
+	<body>
+
+	<script type="module">
+		import * as mGXD from './SOBJECT_FOR_GXD.js';
+
+		function initGXD() {
+			mGXD.CreateRenderer();
+			mGXD.CreateCamera();
+			mGXD.CreateScene();
+			mGXD.CreateLight();
+			mGXD.CreateGrid();
+
+			//faction = GuanyinMale=001, FujinMale=002, JinongMale=003
+			//faction = GuanyinFeMale=004, FujinFeMale=005, JinongFeMale=006
+			//faction = NanginGuanyinMale=007, NanginFujinMale=008, NanginJinongMale=009
+			//faction = NanginGuanyinFeMale=010, NanginFujinFeMale=011, NanginJinongFeMale=012
+
+			//var hair = new mGXD.SOBJECT_FOR_GXD();
+			//hair.Load( 'G03_GDATA/D04_GSOBJECT/001/C001001002.SOBJECT' );
+			//C 001,001,001 = { faction:, type:Hair=001, index:ModelNumber=001 }
+
+			//var face = new mGXD.SOBJECT_FOR_GXD();
+			//face.Load( 'G03_GDATA/D04_GSOBJECT/001/C001002001.SOBJECT' );
+			//C 001,002,001 = { faction:, type:Face=002, index:ModelNumber=001 }
+			
+			//var body = new mGXD.SOBJECT_FOR_GXD();
+			//body.Load( 'G03_GDATA/D04_GSOBJECT/001/C001003001.SOBJECT' );
+			//C 001,003,001 = { faction:, type:Body=003, index:ModelNumber=000 }
+
+			//var foot = new mGXD.SOBJECT_FOR_GXD();
+			//foot.Load( 'G03_GDATA/D04_GSOBJECT/001/C001004001.SOBJECT' );
+			//C 001,004,001 = { faction:, type:Foot=003, index:ModelNumber=000 }
+
+			//var weapon1 = new mGXD.SOBJECT_FOR_GXD();
+			//weapon1.Load( 'G03_GDATA/D04_GSOBJECT/001/C001005001.SOBJECT' );
+			//C 001,005,001 = { faction:, type:Weapon=005(Sword), index:ModelNumber=001 }
+			//C 001,005,001 = { faction:, type:Weapon=005(Katana), index:ModelNumber=001 }
+			//C 001,005,001 = { faction:, type:Weapon=005(Light Blade), index:ModelNumber=001 }
+
+			//var weapon2 = new mGXD.SOBJECT_FOR_GXD();
+			//weapon2.Load( 'G03_GDATA/D04_GSOBJECT/001/C001006001.SOBJECT' );
+			//C 001,006,001 = { faction:, type:Weapon=006(Blade), index:ModelNumber=001 }
+			//C 001,006,001 = { faction:, type:Weapon=006(Double Blade), index:ModelNumber=001 }
+			//C 001,006,001 = { faction:, type:Weapon=006(Spear), index:ModelNumber=001 }
+
+			//var weapon3 = new mGXD.SOBJECT_FOR_GXD();
+			//weapon3.Load( 'G03_GDATA/D04_GSOBJECT/001/C001007001.SOBJECT' );
+			//C 001,007,001 = { faction:, type:Weapon=007(Marble), index:ModelNumber=001 }
+			//C 001,007,001 = { faction:, type:Weapon=007(Lute), index:ModelNumber=001 }
+			//C 001,007,001 = { faction:, type:Weapon=007(Scepter), index:ModelNumber=001 }
+
+			//var mount = new mGXD.SOBJECT_FOR_GXD();
+			//mount.Load( 'G03_GDATA/D04_GSOBJECT/009/Y017001.SOBJECT' );
+			//Y 001,001 = { index:ModelNumber=001, type:001 }
+
+			var costume = new mGXD.SOBJECT_FOR_GXD();
+			costume.Load( 'G03_GDATA/D04_GSOBJECT/010/A001001001.SOBJECT' );
+			//A 001,001,001 = { faction:, type:001, index:ModelNumber=001 }
+
+			mGXD.Update();
+		}
+
+
+		initGXD();
+
+	</script>
+
+	</body>
+</html>
